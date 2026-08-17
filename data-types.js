@@ -123,3 +123,4 @@ console.log(Boolean(""), Boolean(" "))
 
 console.log(undefined, null, NaN)
 
+console.log(finalAddress.slice(0, 10))
