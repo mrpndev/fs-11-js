@@ -137,7 +137,7 @@ let reverseStr = str => {
 	}
 
 	return result
-};
+}
 
 console.log(reverseStr("mary had a little lamb"));
 
