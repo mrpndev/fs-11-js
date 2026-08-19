@@ -76,7 +76,7 @@ console.log(concatStrings("Troy", "Brannon"));
 function countVowels(str) {
 	let count = 0;
 	let sanitized = str.toLowerCase();
-
+	
 	for (l of sanitized) {
 		if (l === "a" || l === "e" || l === "o" || l === "u" || l === "i") {
 			count++;
@@ -136,8 +136,8 @@ let reverseStr = str => {
 		result += str[i];
 	}
 
-	return result
-}
+	return result;
+};
 
 console.log(reverseStr("mary had a little lamb"));
 
@@ -146,6 +146,33 @@ console.log(reverseStr("mary had a little lamb"));
 	* runs immediately without a need of invocation
 */
 
-(function() {
-	console.log("IIFE")
-})()
+(function () {
+	console.log("IIFE");
+})();
+
+/*
+	? Fizzbuzz challenge
+	Create a function that takes a parameters called start and stop.
+	Loop over numbers from start to stop
+	If the number is divisible by 3, print "Fizz"
+	If the number is divisible by 5, print "Buzz"
+	If the number is divisible by 3 and 5, print "Fizz Buzz"
+	If the number is not divisible, print the number only
+	Invoke your function to make sure it works.
+*/
+
+const fizzBuzz = (start, stop) => {
+	for (let i = start; i <= stop; i++) {
+		if (i % 3 === 0 && i % 5 === 0) {
+			console.log("Fizz Buzz");
+		} else if (i % 5 === 0) {
+			console.log("Buzz");
+		} else if (i % 3 === 0) {
+			console.log("Fizz");
+		} else {
+			console.log(i);
+		}
+	}
+};
+
+fizzBuzz(10,200000)
